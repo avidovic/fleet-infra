@@ -1,0 +1,24 @@
+# Exported from:        http://Anas-MacBook-Pro-2.local:5516/
+# Release version:      24.1.0
+# Date created:         Tue Jun 03 11:31:36 CEST 2025
+
+---
+apiVersion: xl-release/v1
+kind: Templates
+metadata:
+  path: /
+  home: Samples & Tutorials
+spec:
+- name: dd
+  type: events.PostWebhookEndpoint
+  path: deploy
+  authentication:
+    type: events.NoAuthentication
+- name: deploy config
+  type: deploy.DeploymentConfig
+- name: deploy webhook
+  type: deploy.StatusWebhookEventSource
+  eventSource: dd
+  sourceServer: deploy
+  liveDeploymentConfigs:
+  - deploy config
