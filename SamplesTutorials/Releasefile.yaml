@@ -1,17 +1,4 @@
 # Exported from:        http://Anas-MacBook-Pro-2.local:5516/
 # Release version:      24.1.0
-# Date created:         Tue Jun 03 11:31:36 CEST 2025
+# Date created:         Thu Jun 05 10:30:59 CEST 2025
 
----
-apiVersion: xl-release/v1
-kind: Import
-spec:
-  imports:
-  - Applications.yaml
-  - Connections.yaml
-  - Environments.yaml
-  - Notifications.yaml
-  - Template_Configure Release.yaml
-  - Template_Guided Tour for Release Managers.yaml
-  - Template_Sample Release Template.yaml
-  - Template_Welcome to Release!.yaml
