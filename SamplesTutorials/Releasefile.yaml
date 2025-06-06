@@ -1,6 +1,6 @@
-# Exported from:        http://Anas-MacBook-Pro-2.local:5516/
+# Exported from:        http://Mac:5516/
 # Release version:      24.1.0
-# Date created:         Thu Jun 05 11:04:13 CEST 2025
+# Date created:         Fri Jun 06 12:16:03 CEST 2025
 
 ---
 apiVersion: xl-release/v1
@@ -8,3 +8,4 @@ kind: Import
 spec:
   imports:
   - Trigger_deploy test.yaml
+  - Trigger_event.yaml

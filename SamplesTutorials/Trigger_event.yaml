@@ -9,25 +9,16 @@ metadata:
   path: /
   home: Samples & Tutorials
 spec:
-- name: deploy test
-  type: webhook.StatusWebhookTrigger
+- name: event
+  type: events.EventBasedTrigger
+  description: ee
   mappedProperties:
   - type: xlrelease.StringValue
     targetProperty: releaseTitle
-    value: test new trigger
-  - type: xlrelease.StringValue
-    targetProperty: "variables[user]"
-    value: mememe
+    value: dobar
   - type: xlrelease.StringValue
     targetProperty: template
-    value: Welcome to Release!
-  - type: xlrelease.StringValue
-    targetProperty: releaseFolder
-    value: ./
+    value: Configure Release
   triggerActionType: xlrelease.CreateReleaseFromTemplateAction
-  endpoint: deploy webhook
-  applicationTitle: app1
-  environmentTitle: env1
-  applicationVersion: "1.0"
-  deploymentStatuses:
-  - executed
+  eventSource: deploy webhook
+  eventType: events.DeploymentServerEvent
