@@ -1,0 +1,29 @@
+# Exported from:        http://Mac:5516/
+# Release version:      24.1.0
+# Date created:         Fri Jun 06 12:22:35 CEST 2025
+
+---
+apiVersion: xl-release/v1
+kind: Applications
+metadata:
+  path: /
+  home: Samples & Tutorials
+spec:
+- name: app1
+  type: xlrelease.Application
+  correlationUid: b7acd8fd-044f-4926-a119-ce7d3ceeb0fb
+  applicationSource:
+    type: deploy.ApplicationSource
+    serverUrl: http://host.k3d.internal:4516
+    deploymentTask: "[app1](http://host.k3d.internal:4516/#/explorer?taskId=8ce276ec-b273-44bb-96fb-5033f1efce72)"
+  environments:
+  - env1
+- name: appF
+  type: xlrelease.Application
+  correlationUid: 0f7290f2-10ca-4586-a13d-4a4d9139cf6b
+  applicationSource:
+    type: deploy.ApplicationSource
+    serverUrl: http://host.k3d.internal:4516
+    deploymentTask: "[appF](http://host.k3d.internal:4516/#/explorer?taskId=dde83a65-c60a-49cf-9348-00ff8e006212)"
+  environments:
+  - env1
