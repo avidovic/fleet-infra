@@ -9,12 +9,12 @@ metadata:
   path: /
   home: Samples & Tutorials
 spec:
-- name: event
+- name: endpoint
   type: events.EventBasedTrigger
   mappedProperties:
   - type: xlrelease.StringValue
     targetProperty: releaseTitle
-    value: event release
+    value: endpoint release
   - type: xlrelease.StringValue
     targetProperty: template
     value: Configure Release
@@ -22,5 +22,5 @@ spec:
     targetProperty: releaseFolder
     value: ./
   triggerActionType: xlrelease.CreateReleaseFromTemplateAction
-  eventSource: deploy webhook
-  eventType: events.DeploymentServerEvent
+  eventSource: endpoint
+  eventType: events.HttpRequestEvent

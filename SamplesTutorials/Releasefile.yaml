@@ -1,6 +1,6 @@
-# Exported from:        http://Mac:5516/
+# Exported from:        http://Anas-MacBook-Pro-2.local:5516/
 # Release version:      24.1.0
-# Date created:         Fri Jun 06 12:22:35 CEST 2025
+# Date created:         Mon Jun 09 10:41:20 CEST 2025
 
 ---
 apiVersion: xl-release/v1
@@ -14,5 +14,6 @@ spec:
   - Template_Guided Tour for Release Managers.yaml
   - Template_Sample Release Template.yaml
   - Template_Welcome to Release!.yaml
-  - Trigger_deploy test.yaml
+  - Trigger_endpoint.yaml
   - Trigger_event.yaml
+  - Trigger_webhook.yaml

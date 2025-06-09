@@ -1,6 +1,6 @@
-# Exported from:        http://Mac:5516/
+# Exported from:        http://Anas-MacBook-Pro-2.local:5516/
 # Release version:      24.1.0
-# Date created:         Fri Jun 06 12:22:35 CEST 2025
+# Date created:         Mon Jun 09 10:41:20 CEST 2025
 
 ---
 apiVersion: xl-release/v1
@@ -9,15 +9,15 @@ metadata:
   path: /
   home: Samples & Tutorials
 spec:
-- name: deploy test
+- name: webhook
   type: webhook.StatusWebhookTrigger
   mappedProperties:
   - type: xlrelease.StringValue
     targetProperty: releaseTitle
-    value: test new trigger
+    value: webhook
   - type: xlrelease.StringValue
     targetProperty: "variables[user]"
-    value: mememe
+    value: aman
   - type: xlrelease.StringValue
     targetProperty: template
     value: Welcome to Release!
@@ -30,4 +30,4 @@ spec:
   environmentTitle: env1
   applicationVersion: "1.0"
   deploymentStatuses:
-  - executed
+  - done
